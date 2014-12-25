@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Name=Syncthing
+Icon=harbour-syncthing
+Exec=harbour-syncthing
