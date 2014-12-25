@@ -1,0 +1,19 @@
+Name: harbour-syncthing
+Version: 0.10.13
+Release: 1
+Group: Applications/File
+Summary: Continuous File Synchronization
+License: GPL3
+URL: https://syncthing.net/
+Sources:
+- https://github.com/syncthing/syncthing/releases/download/v%{version}/syncthing-linux-armv7-v%{version}.tar.gz
+Requires:
+- libsailfishapp
+Description: Autonomous file synchronization program.
+
+Builder: qtc5
+Files:
+- '%{_bindir}/%{name}'
+- '%{_datadir}/%{name}/qml'
+- '%{_datadir}/applications/%{name}.desktop'
+- '%{_datadir}/icons'
