@@ -1,2 +1,3 @@
 syncthing-linux-armv7-v*.tar.gz
 /harbour-syncthing.pro.user
+/rpm/harbour-syncthing.spec
