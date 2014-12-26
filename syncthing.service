@@ -1,0 +1,12 @@
+[Unit]
+Description=Syncthing for %u
+After=network.target
+
+[Service]
+ExecStart=/usr/share/harbour-syncthing/libexec/syncthing
+Environment=STNOUPGRADE=yes
+# allow restarting after suspend
+RestartForceExitStatus=3
+
+[Install]
+WantedBy=default.target

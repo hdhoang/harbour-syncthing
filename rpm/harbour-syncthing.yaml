@@ -6,7 +6,7 @@ Summary: Continuous File Synchronization
 License: GPL3
 URL: https://syncthing.net/
 Sources:
-- https://github.com/syncthing/syncthing/releases/download/v%{version}/syncthing-linux-armv7-v%{version}.tar.gz
+- https://github.com/syncthing/syncthing/releases/download/v%{Version}/syncthing-linux-armv7-v%{Version}.tar.gz
 Requires:
 - libsailfishapp
 Description: Autonomous file synchronization program.
@@ -14,6 +14,7 @@ Description: Autonomous file synchronization program.
 Builder: qtc5
 Files:
 - '%{_bindir}/%{name}'
-- '%{_datadir}/%{name}/qml'
+- '%{_datadir}/%{name}'
 - '%{_datadir}/applications/%{name}.desktop'
 - '%{_datadir}/icons'
+- '%{_libdir}/systemd/user'
