@@ -17,6 +17,19 @@ ApplicationWindow {
             }
         }
     }
+    cover: CoverBackground {
+        CoverPlaceholder {
+            icon.source: "../syncthing.png"
+            text: syncthing_service.state
+        }
+        CoverActionList {
+            CoverAction {
+                iconSource: syncthing_service.state == "inactive" ? "image://theme/icon-cover-play"
+                : "image://theme/icon-cover-pause"
+                onTriggered: win.toggle()
+            }
+        }
+    }
     DBusInterface {
         id: syncthing_service
 

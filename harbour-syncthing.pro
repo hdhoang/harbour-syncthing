@@ -5,6 +5,7 @@ TEMPLATE = subdirs
   qml/harbour-syncthing.qml \
   rpm/harbour-syncthing.yaml \
   syncthing.service \
+  syncthing.png \
 
   INSTALLS += service
   service.path = /usr/lib/systemd/user
@@ -13,3 +14,7 @@ TEMPLATE = subdirs
   INSTALLS += syncthing
   syncthing.path = /usr/share/harbour-syncthing/libexec
   syncthing.files = syncthing
+
+  INSTALLS += cover-icon
+  cover-icon.path = /usr/share/harbour-syncthing
+  cover-icon.files = syncthing.png
