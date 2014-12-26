@@ -1,5 +1,5 @@
 TEMPLATE = subdirs
-  SUBDIRS = src
+  SUBDIRS = nemodbus src
   CONFIG += sailfishapp
   OTHER_FILES += \
   qml/harbour-syncthing.qml \
