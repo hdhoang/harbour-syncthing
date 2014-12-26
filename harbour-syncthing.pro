@@ -1,6 +1,6 @@
-TARGET = harbour-syncthing
+TEMPLATE = subdirs
+  SUBDIRS = src
   CONFIG += sailfishapp
-  SOURCES += src/harbour-syncthing.cpp
   OTHER_FILES += \
   qml/harbour-syncthing.qml \
   rpm/harbour-syncthing.yaml \
