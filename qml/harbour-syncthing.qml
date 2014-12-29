@@ -24,7 +24,7 @@ ApplicationWindow {
         }
         CoverActionList {
             CoverAction {
-                iconSource: syncthing_service.state == "inactive" ? "image://theme/icon-cover-play"
+                iconSource: syncthing_service.state != "active" ? "image://theme/icon-cover-play"
                 : "image://theme/icon-cover-pause"
                 onTriggered: win.toggle()
             }
@@ -41,7 +41,7 @@ ApplicationWindow {
     }
     function toggle() {
         syncthing_service.call(
-        syncthing_service.state == "inactive" ? "Start" : "Stop"
+        syncthing_service.state != "active" ? "Start" : "Stop"
         , ["replace"])
         syncthing_service.state = syncthing_service.getProperty("ActiveState")
     }
