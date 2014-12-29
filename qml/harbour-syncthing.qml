@@ -19,7 +19,7 @@ ApplicationWindow {
     }
     cover: CoverBackground {
         CoverPlaceholder {
-            icon.source: "../syncthing.png"
+            icon.source: "../harbour-syncthing.png"
             text: syncthing_service.state
         }
         CoverActionList {
