@@ -43,5 +43,6 @@ ApplicationWindow {
         syncthing_service.call(
         syncthing_service.state == "inactive" ? "Start" : "Stop"
         , ["replace"])
+        syncthing_service.state = syncthing_service.getProperty("ActiveState")
     }
 }
